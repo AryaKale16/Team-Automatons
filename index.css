@@ -16,6 +16,18 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+@media only screen and (max-width: 500px) {
+  .about-img img {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+  }
+}
+@media only screen and (min-width: 500px) {
+  .about-img img {
+    height: 400px;
+  }
+}
 /* ///////////..utility classes../////////// */
 
 .container {
@@ -193,7 +205,7 @@ body {
 
 .about-img img {
   display: block;
-  height: 400px;
+  /* height: 400px; */
   max-width: 100%;
   margin: auto;
   object-fit: cover;
