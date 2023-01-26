@@ -199,6 +199,7 @@ body {
   margin: auto;
   object-fit: cover;
   object-position: right;
+  /* border-radius: 50%; */
 }
 
 /* ..........////Food category///........... */
@@ -207,6 +208,15 @@ body {
   padding: 5rem 0 10rem 0;
   background-color: black;
   /* clip-path: polygon(0 23%, 100% 0, 100% 100%, 0% 100%); */
+}
+
+@media only screen and (min-width:700px){
+  #food{
+    clip-path: polygon(0 23%, 100% 0, 100% 100%, 0% 100%);
+  }
+  /* #about{
+    clip-path: polygon(0 0, 100% 0, 83% 81%, 0% 100%);
+  } */
 }
 
 #food h2 {
@@ -647,5 +657,10 @@ body {
 @media (orientation: landscape) and (max-height: 500px) {
   .showcase-area {
     height: 50vmax;
+    /* border-radius: 50%; */
+  }
+  .about-img img
+  {
+    border-radius: 50%;
   }
 }
